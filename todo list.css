@@ -1,29 +1,25 @@
-:root{
-    --lightgreen : #00c78a;
-    --orange: #ff9c27;
-    --bg:#162719;
-    --primarytext: #f2e8cf;
-} 
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background: #ead9b1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url("https://res.cloudinary.com/dywjasgpb/image/upload/v1721212547/hand_vrrsax.avif");
 }
 header{
     padding: 2rem 1rem;
     max-width: 700px;
     width: 100%;
+    margin-left: 100px;
 }
 header h1{
     font-size: 2.5rem;
     font-weight: 600;
-    color:var(--bg);
+    color:#162719;
     margin-bottom: 1.5rem;
 }
 #task-form{
@@ -37,24 +33,22 @@ input,button{
 }
 #task-input{
     flex: 1 1 0%;
-    background-color: var(--bg);
+    background-color:#162719;
     padding: 1rem;
-    border: 1px solid var(--primarytext);
+    border: 1px solid #f2e8cf;
     border-radius: 1rem;
     margin-right: 1rem;
-    color: var(--primarytext);
+    color: #f2e8cf;
     font-size: 1.25rem;
 }
 #task-input::placeholder{
-    color: var(--primarytext);
+    color: #f2e8cf;
 }
 #task-submit{
-    background-color: var(--bg);
-    color: var(--primarytext);
+    background-color:#162719;
+    color: #f2e8cf;
     font-size: 1.25rem;
     font-weight: 700;
-    cursor: pointer;
-    transition: 0.4s;
     border-radius: 1rem;
     padding: 1rem;
 }
@@ -76,6 +70,7 @@ main{
     flex: 1 1 0%;
     max-width: 700px;
     width: 100%;
+    margin-left: 100px;
 }
 .task-list{
     padding: 1rem;
@@ -83,8 +78,7 @@ main{
 #tasks .task{
     display: flex;
     justify-content: space-between;
-    
-    border-bottom:2px solid var(--bg); ;
+    border-bottom: 2px solid #162719;
     padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -94,14 +88,15 @@ main{
     flex: 1 1 0%;
 }
 #tasks .task .content .text{
-    color: var(--bg);
+    color:#162719;
     font-size: 1.13rem;
+    font-weight: bold;
     width: 100%;
     display: block;
     transition: 0.4s;
 }
 #tasks .task .content .text:not(:read-only){
-    color: var(--lightgreen);
+    color:#00c78a;
 }
 #tasks .task .actions{
     display: flex;
@@ -123,13 +118,13 @@ main{
     opacity: 0.6;
 }
 .task .actions .Edit{
-    color: var(--lightgreen);
+    color:#ff9c27;
 }
 .task .actions .Delete{
     color: crimson;
 }
 .task .actions .Completed{
-    color: var(--orange)
+    color:#00c78a;
 }
 .strike {
     text-decoration: line-through;

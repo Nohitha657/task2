@@ -54,7 +54,7 @@ window.addEventListener('load', ()=>{
 
     task_edit_botton.addEventListener('click', ()=>{
             
-    if (task_edit_botton.innerText.toLowerCase() =="edit") {
+        if (task_edit_botton.innerText.toLowerCase() =="edit") {
             task_input.removeAttribute("readonly");
             task_input.focus();
             task_edit_botton.innerText = "Save";
