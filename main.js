@@ -9,7 +9,7 @@ window.addEventListener('load', ()=>{
 
     const task = input.value;
     if (!task) {
-         return;
+        return;
     } 
 
     const task_div = document.createElement("div");
@@ -67,9 +67,7 @@ window.addEventListener('load', ()=>{
     });
 
     task_delete_button.addEventListener('click', ()=>{
-        if (confirm("Are you sure you want to delete this task?")) {
-            list.removeChild(task_div);
-        }
+               list.removeChild(task_div);
     })
     
     task_completed_button.addEventListener('click', ()=>{
