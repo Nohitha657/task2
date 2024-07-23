@@ -39,6 +39,10 @@ a{
     color: black;
     font-weight:bold
 }
+/* a:hover{
+    text-align: line;
+    color: black;
+} */
 .container{
     flex: 0% 1 0%;
     max-width: 750px;
